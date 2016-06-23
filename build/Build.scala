@@ -25,7 +25,6 @@ class Build(val context: cbt.Context) extends PackageJars {
       )
 
   override def compile = {
-    println("Compiling...")
     super.compile
   }
 
@@ -67,7 +66,7 @@ class Build(val context: cbt.Context) extends PackageJars {
 
 object IdeaScalaProjectTemplate {
 
-  // @TODO inject from the Build.scala
+  // @TODO inject from the build.scala
   // scala version
   // path of cbt relative to module dir
   val templateWithCBTSources: (String) => String = (dependencies: String) =>
